@@ -22,7 +22,7 @@ class SWRequester(APIRequester):
     def __init__(self, base_url='https://swapi.dev/api/'):
         self.base_url = base_url
 
-    def get_sw_categories(self) -> list:
+    def get_sw_categories(self):
         """Возвращает список доступных категорий SWAPI"""
         response = self.get()
         data = response.json()
